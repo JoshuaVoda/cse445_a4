@@ -6,13 +6,13 @@
     <xs:complexType>
       <xs:sequence>
         <!-- at least one park is required -->
-        <xs:element name="NationalPark" maxOccurs="unbounded">
+        <xs:element name="NationalPark" minOccurs="1" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
               <!-- left to right order: Name, Phone(s), Address -->
               <xs:element name="Name" type="xs:string"/>
               <!-- multiple phone numbers allowed per the diagram -->
-              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
