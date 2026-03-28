@@ -11,7 +11,7 @@
     </xs:sequence>
   </xs:complexType>
 
-  <!-- NationalPark type - Name, Phone(s), Address in order, Rating optional -->
+  <!-- NationalPark type -Name, phones, address in order, Rating optional -->
   <xs:complexType name="NationalParkType">
     <xs:sequence>
       <xs:element name="Name" type="xs:string"/>
